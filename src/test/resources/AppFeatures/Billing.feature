@@ -7,7 +7,6 @@ Scenario Outline: Billing amount
 	And user clicks on calculate button
 	Then it gives final amount "<finalamount>"
 	
-	
 		Examples:
 		| billingamount | taxamount | finalamount |
 		| 100						| 10				| 110					|
