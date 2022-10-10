@@ -18,9 +18,16 @@
 #Sample Feature Definition Template
 
 Feature: Amazon search
-Scenario: Search a Product
 
+Scenario: Search a Product Iphone
 Given I have a Search text field on Amazon page
 When I Search a product name "Iphone" and price 50000
 Then Product with name "Iphone" should be displayed
+Then Order id 2618 and username is "Kishore M V"
+
+Scenario: Search a Product Macbook Air
+Given I have a Search text field on Amazon page
+When I Search a product name "Macbook Air" and price 85000
+Then Product with name "Macbook Air" should be displayed
+Then Order id 2567 and username is "Kishore"
 

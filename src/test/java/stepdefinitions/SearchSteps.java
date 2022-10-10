@@ -28,11 +28,16 @@ public class SearchSteps {
 		
 		search=new Search();
 		String name=search.displayProduct(product);
-		System.out.println("The search product is: "+name);
+		System.out.println("The search product is: "+productName);
 		
-		Assert.assertEquals(product.getProductName(), name);
+		Assert.assertEquals(product.getProductName(), productName);
 		
 	} 
+	
+	@Then("Order id {int} and username is {string}")
+	public void order_id_and_username_is(Integer orderId, String name) {
+		System.out.println("The order is :"+orderId+" Name : "+name);
+	}
 	
 	
 }
